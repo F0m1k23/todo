@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+        /* Основной шрифт */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4a90e2;
+    font-family: 'Roboto', sans-serif;
+        /* Основной шрифт */
+}
+.inputBox {
+    min-width: 500px;
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.inputText {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inputText:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+.btnAdd {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnAdd:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+}
+
+.btnAdd:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.blockMassage {}
+
+h1 {
+    font-size: 36px;
+    /* Увеличен размер шрифта для выделения заголовка */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* Основной шрифт */
+    /* font-style: italic; */
+    /* Курсивный стиль */
+    font-weight: 700;
+    /* Увеличена жирность для выделения */
+    letter-spacing: 2px;
+    /* Добавлен межбуквенный интервал для более красивого вида */
+    text-transform: uppercase;
+    /* Сделан текст заглавными буквами */
+    color: #4a90e2;
+    /* Цвет заголовка */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Лёгкая тень для выделения текста */
+    transition: all 0.3s ease-in-out;
+    /* Плавный переход при наведении */
+}
+
+.app {
+    background-color: rgb(242, 242, 242);
+    padding: 30px;
+    border-radius: 5px;
+}
+.element {
+    /* width: 100%; */
+    margin-bottom: 10px;
+    display: flex;
+    
+    border-radius: 5px;
+    padding: 5px 10px;
+    align-items: center;
+}
+.element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px 2px rgba(74, 144, 226, 0.22);
+}
+.element span {
+    margin-right: 10px;
+    font-size: 10px;
+}
+.elementBlockFlex {
+    flex: 1 1 auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.check {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    border: none;
+    background-color: #50c878;
+    color: white;
+    transition: all .3s ease;
+}
+.check:hover {
+    transform: scale(1.1);
+}
+.check.active {
+    opacity: 0.5;
+    color: white;
+}
+.del {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(242, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    transition: all .3s ease;
+}
+.del:hover {
+        transform: scale(1.1);
+}
+.text {
+    flex: 1 1 auto;
+}
+.text.active {
+    text-decoration: line-through;
+    color: #ccc;
+    cursor: not-allowed;
+}
