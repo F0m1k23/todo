@@ -14,3 +14,4 @@ git clone https://github.com/F0m1k23/todo.git
 Откройте index.html в браузере.
 🔗 Демо:
 Посмотреть на GitHub Pages
+https://f0m1k23.github.io/todo/
