@@ -64,6 +64,7 @@ elementBlock.addEventListener('click', (event) =>  {
         saveTasks()
         if(i != -1) {
             arrayMassage[i].completed = !arrayMassage[i].completed;
+            saveTasks()
         }
         console.log(arrayMassage)
     }
