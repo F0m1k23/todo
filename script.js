@@ -61,6 +61,7 @@ elementBlock.addEventListener('click', (event) =>  {
         checkButton.classList.toggle('active');
         checkButton.previousElementSibling.classList.toggle('active');
         const i = arrayMassage.findIndex((el) => el.id === id);
+        saveTasks()
         if(i != -1) {
             arrayMassage[i].completed = !arrayMassage[i].completed;
         }
